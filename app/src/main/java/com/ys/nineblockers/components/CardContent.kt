@@ -22,7 +22,7 @@ fun CardContent(
     Card(
         modifier = modifier.fillMaxWidth(),
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.onPrimary
+            containerColor = MaterialTheme.colorScheme.primary
         ),
         shape = RoundedCornerShape(4.dp)
     ) {
@@ -32,7 +32,7 @@ fun CardContent(
                 .padding(16.dp),
             textAlign = TextAlign.Center,
             style = MaterialTheme.typography.headlineLarge,
-            color = MaterialTheme.colorScheme.tertiary,
+            color = MaterialTheme.colorScheme.onPrimary,
             text = label
         )
     }
@@ -42,6 +42,6 @@ fun CardContent(
 @Composable
 fun PreviewCardContent() {
     NineBlockersTheme {
-        CardContent(label = "안녕하세요\nㅁㄴ어ㅏㄹㅁ넝라ㅣ\nㅁㄴ어ㅏ리")
+        CardContent(label = "안녕하세요\n안녕하세요\n안녕하세요")
     }
 }

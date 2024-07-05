@@ -14,3 +14,13 @@ fun List<String>.AddReverseCardContentComponent(visibleIndex: Int) {
         Spacer(modifier = Modifier.height(16.dp))
     }
 }
+
+@Composable
+fun List<String>.AddCardContentComponent(visibleIndex: Int) {
+    forEachIndexed { index, label ->
+        if (index <= visibleIndex) {
+            CardContent(label = label)
+            Spacer(modifier = Modifier.height(16.dp))
+        }
+    }
+}

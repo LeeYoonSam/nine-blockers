@@ -9,7 +9,7 @@ import androidx.compose.ui.graphics.Color
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
-    secondary = PurpleGrey80,
+    secondary = Secondary,
     tertiary = Black,
     background = Color(0xFFFFFBFE),
     surface = Color(0xFFFFFBFE),
@@ -22,7 +22,7 @@ private val DarkColorScheme = darkColorScheme(
 
 private val LightColorScheme = lightColorScheme(
     primary = Purple40,
-    secondary = PurpleGrey40,
+    secondary = Secondary,
     tertiary = Black,
 
     // Other default colors to override
